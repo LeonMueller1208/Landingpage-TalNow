@@ -18,13 +18,15 @@ export default function Newsletter() {
         body: JSON.stringify({ email }),
       });
 
+      const data = await response.json();
+
       if (response.ok) {
         setStatus('success');
-        setMessage('Erfolgreich angemeldet! 🎉 Check deine E-Mails.');
+        setMessage('Erfolgreich angemeldet! 🎉');
         setEmail('');
       } else {
         setStatus('error');
-        setMessage('Etwas ist schiefgelaufen. Bitte versuche es erneut.');
+        setMessage(data.error || 'Etwas ist schiefgelaufen. Bitte versuche es erneut.');
       }
     } catch (error) {
       setStatus('error');

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { supabase } from '@/lib/supabase';
 
 export async function POST(request: NextRequest) {
   try {
@@ -11,13 +12,29 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // TODO: Hier später Integration mit Newsletter-Service (z.B. Mailchimp, ConvertKit, etc.)
-    // Für jetzt: Einfach in Console loggen
-    console.log('📧 Neue Newsletter-Anmeldung:', email);
+    // E-Mail in Supabase speichern
+    const { data, error } = await supabase
+      .from('newsletter_subscribers')
+      .insert({ email })
+      .select();
 
-    // Optional: In Supabase speichern
-    // const supabase = createClient();
-    // await supabase.from('newsletter_subscribers').insert({ email });
+    if (error) {
+      // Prüfen ob E-Mail bereits existiert
+      if (error.code === '23505') {
+        return NextResponse.json(
+          { error: 'Diese E-Mail ist bereits registriert!' },
+          { status: 409 }
+        );
+      }
+      
+      console.error('Supabase Error:', error);
+      return NextResponse.json(
+        { error: 'Fehler beim Speichern. Bitte versuche es erneut.' },
+        { status: 500 }
+      );
+    }
+
+    console.log('✅ Neue Newsletter-Anmeldung:', email);
 
     return NextResponse.json(
       { message: 'Erfolgreich angemeldet!' },
