@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TalNow Landing Page 🚀
 
-## Getting Started
+Moderne Landing Page für TalNow - Die Plattform für intelligentes Matchmaking zwischen Unternehmen und Talenten.
 
-First, run the development server:
+## Features
+
+✅ **Hero Section** mit Claim und Value Proposition  
+✅ **Benefits** - 3 Hauptvorteile der Plattform  
+✅ **Newsletter/Beta-Waitlist** - Prominent platziert  
+✅ **SEO-Artikel** - "Die 7 größten Fails im Recruiting 2024"  
+✅ **Responsive Design** - Mobile-first  
+✅ **TalNow Branding** - Logo mit Gradient (Blau → Grün)  
+✅ **Animationen** - Subtile Blob-Animationen im Hero  
+
+## Tech Stack
+
+- **Next.js 15** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **React**
+
+## Development
 
 ```bash
+# Installation
+npm install
+
+# Dev Server starten
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build für Production
+npm run build
+
+# Production Server starten
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment auf Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Neues Vercel-Projekt erstellen:**
+   - Gehe zu [vercel.com](https://vercel.com)
+   - "Add New Project"
+   - Repository auswählen: `landingpage`
+   - Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Domain einrichten:**
+   - In Vercel: Settings → Domains
+   - `talnow.de` hinzufügen
+   - DNS-Einträge bei Domain-Provider setzen
 
-## Learn More
+3. **Prototyp auf Subdomain:**
+   - Aktuelles Projekt (Jobmatching) auf `app.talnow.de`
+   - Landing Page auf `talnow.de`
 
-To learn more about Next.js, take a look at the following resources:
+## Newsletter Integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Aktuell loggt die Newsletter-API nur in die Console. Für Production:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Option 1: Mailchimp
+```typescript
+// In app/api/newsletter/route.ts
+const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
+const MAILCHIMP_LIST_ID = process.env.MAILCHIMP_LIST_ID;
+```
 
-## Deploy on Vercel
+### Option 2: ConvertKit
+```typescript
+const CONVERTKIT_API_KEY = process.env.CONVERTKIT_API_KEY;
+const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID;
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Option 3: Supabase
+```typescript
+import { createClient } from '@supabase/supabase-js';
+const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_ANON_KEY!);
+await supabase.from('newsletter_subscribers').insert({ email, created_at: new Date() });
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## SEO
+
+- ✅ Meta Tags optimiert
+- ✅ Open Graph Tags
+- ✅ Semantisches HTML
+- ✅ Artikel mit Keywords
+- ✅ Schnelle Ladezeit
+
+## Struktur
+
+```
+landingpage/
+├── app/
+│   ├── page.tsx              # Hauptseite
+│   ├── layout.tsx            # Layout + SEO
+│   ├── globals.css           # Globale Styles
+│   └── api/
+│       └── newsletter/
+│           └── route.ts      # Newsletter API
+├── components/
+│   ├── Hero.tsx              # Hero Section
+│   ├── Benefits.tsx          # 3 Benefits
+│   ├── Newsletter.tsx        # Newsletter Form
+│   ├── Article.tsx           # SEO-Artikel
+│   ├── Footer.tsx            # Footer
+│   └── Logo.tsx              # TalNow Logo
+└── README.md
+```
+
+## Nächste Schritte
+
+1. ✅ Landing Page erstellt
+2. ⏳ Newsletter-Service integrieren (Mailchimp/ConvertKit)
+3. ⏳ Auf Vercel deployen
+4. ⏳ Domain `talnow.de` verbinden
+5. ⏳ Google Analytics hinzufügen
+6. ⏳ Impressum & Datenschutz Seiten erstellen
+
+## Support
+
+Bei Fragen oder Problemen: Einfach melden! 🚀
