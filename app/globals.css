@@ -49,6 +49,24 @@
     transform: translateY(30px);
     animation: slideUp 0.8s ease-out forwards;
   }
+  
+  .animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  /* Touch-friendly active states for mobile */
+  @media (hover: none) and (pointer: coarse) {
+    .hover\:scale-110:active {
+      transform: scale(1.1);
+    }
+    .hover\:scale-125:active {
+      transform: scale(1.25);
+    }
+    .hover\:-translate-y-1:active {
+      transform: translateY(-0.25rem);
+    }
+  }
 }
 
 @keyframes blob {

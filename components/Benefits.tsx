@@ -1,3 +1,5 @@
+import AnimatedSection from './AnimatedSection';
+
 export default function Benefits() {
   const benefits = [
     {
@@ -19,11 +21,8 @@ export default function Benefits() {
       <div className="max-w-4xl mx-auto">
         <div className="space-y-8">
           {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="flex gap-4 items-start group hover:translate-x-2 transition-all duration-300 fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+            <AnimatedSection key={index} delay={index * 100}>
+              <div className="flex gap-4 items-start group hover:translate-x-2 transition-all duration-300">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 flex items-center justify-center text-white font-bold text-sm mt-1 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 shadow-lg group-hover:shadow-xl group-hover:shadow-emerald-500/50">
                 {index + 1}
               </div>
@@ -35,7 +34,8 @@ export default function Benefits() {
                   {benefit.description}
                 </p>
               </div>
-            </div>
+              </div>
+            </AnimatedSection>
           ))}
         </div>
       </div>

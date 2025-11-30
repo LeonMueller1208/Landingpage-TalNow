@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AnimatedSection from './AnimatedSection';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
@@ -37,14 +38,20 @@ export default function Newsletter() {
   return (
     <section id="newsletter" className="relative py-20 lg:py-24 px-6 lg:px-12 bg-white overflow-hidden">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 fade-in">
-          Beta-Zugang sichern
-        </h2>
-        <p className="text-xl text-gray-600 mb-10 fade-in fade-in-delay-100">
-          Sei einer der Ersten und erlebe modernes Recruiting. Kostenlos.
-        </p>
+        <AnimatedSection>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+            Beta-Zugang sichern
+          </h2>
+        </AnimatedSection>
+        
+        <AnimatedSection delay={100}>
+          <p className="text-xl text-gray-600 mb-10">
+            Sei einer der Ersten und erlebe modernes Recruiting. Kostenlos.
+          </p>
+        </AnimatedSection>
 
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto fade-in fade-in-delay-200">
+        <AnimatedSection delay={200}>
+          <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-3">
             <input
               type="email"
@@ -63,7 +70,8 @@ export default function Newsletter() {
               {status === 'loading' ? 'Lädt...' : 'Anmelden'}
             </button>
           </div>
-        </form>
+          </form>
+        </AnimatedSection>
 
         {message && (
           <div className={`mt-6 p-4 rounded-2xl ${status === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
