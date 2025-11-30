@@ -74,7 +74,9 @@ export async function POST(request: NextRequest) {
                   <p><strong>Was ist TalNow?</strong><br>
                   Recruiting ohne Bullshit. Wir finden für jedes Unternehmen die passenden Talente & für jedes Talent den passenden Job.</p>
                   <p>Wir melden uns bei dir, sobald es losgeht! 🚀</p>
-                  <a href="https://talnow.net" class="cta">Zur Website →</a>
+                  <div style="text-align: center;">
+                    <a href="https://talnow.net" class="cta" style="display: inline-block; background: linear-gradient(to right, #3b82f6, #10b981); color: white; padding: 14px 28px; border-radius: 9999px; text-decoration: none; font-weight: 700; margin: 20px 0;">Zur Website →</a>
+                  </div>
                 </div>
                 
                 <div class="footer">
