@@ -3,7 +3,7 @@ export default function Article() {
     <section id="article" className="py-20 lg:py-24 px-6 lg:px-12 bg-gray-50">
       <div className="max-w-3xl mx-auto">
         {/* Article Header */}
-        <div className="mb-12">
+        <div className="mb-12 fade-in">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 leading-tight">
             Die 7 größten Fails im Recruiting 2024
           </h2>
@@ -51,14 +51,18 @@ export default function Article() {
                   description: 'Recruiting-Entscheidungen ohne echte Daten oder Analyse.'
                 }
               ].map((item, index) => (
-                <div key={index} className="flex gap-4">
+                <div 
+                  key={index} 
+                  className="flex gap-4 group hover:translate-x-2 transition-all duration-300 fade-in"
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
                   <div className="flex-shrink-0">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 flex items-center justify-center text-white font-bold text-sm">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 flex items-center justify-center text-white font-bold text-sm group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 shadow-md group-hover:shadow-lg group-hover:shadow-emerald-500/40">
                       {index + 1}
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
@@ -69,7 +73,7 @@ export default function Article() {
               ))}
             </div>
 
-            <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-2xl border-l-4 border-blue-500">
+            <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-2xl border-l-4 border-blue-500 hover:border-l-8 hover:shadow-xl transition-all duration-300 fade-in">
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Die Lösung?</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Ein System basierend auf echten Daten. Ein Algorithmus, der Culture Fit genauso wichtig nimmt wie Skills. 
@@ -82,10 +86,10 @@ export default function Article() {
           </div>
 
           {/* CTA */}
-          <div className="mt-10 text-center">
+          <div className="mt-10 text-center fade-in fade-in-delay-200">
             <a
               href="#newsletter"
-              className="inline-block bg-gradient-to-r from-blue-500 to-emerald-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-300 hover:scale-105"
+              className="inline-block bg-gradient-to-r from-blue-500 to-emerald-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95"
             >
               Beta-Zugang sichern →
             </a>

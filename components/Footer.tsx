@@ -13,13 +13,13 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-8 text-sm">
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="#" className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
               Impressum
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="#" className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
               Datenschutz
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="#" className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110 hover:-translate-y-0.5">
               Kontakt
             </a>
           </div>
