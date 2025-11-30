@@ -39,8 +39,9 @@ export async function POST(request: NextRequest) {
 
     // Bestätigungs-Email senden
     try {
-      await resend.emails.send({
-        from: 'TalNow <onboarding@resend.dev>',
+      console.log('Versuche Email zu senden an:', email);
+      const emailResult = await resend.emails.send({
+        from: 'TalNow Team <team@talnow.net>',
         to: email,
         subject: 'Willkommen bei TalNow! 🚀',
         html: `
@@ -86,9 +87,11 @@ export async function POST(request: NextRequest) {
         `,
       });
       
+      console.log('✅ Email gesendet! Result:', emailResult);
       console.log('✅ Neue Newsletter-Anmeldung + Email gesendet:', email);
     } catch (emailError) {
-      console.error('Email Send Error:', emailError);
+      console.error('❌ Email Send Error:', emailError);
+      console.error('Full error:', JSON.stringify(emailError, null, 2));
       // Fehler beim Email-Versand sollte nicht die ganze Anmeldung stoppen
     }
 
