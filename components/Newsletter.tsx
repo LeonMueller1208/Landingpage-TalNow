@@ -22,7 +22,7 @@ export default function Newsletter() {
 
       if (response.ok) {
         setStatus('success');
-        setMessage('Erfolgreich angemeldet! 🎉');
+        setMessage('Erfolgreich angemeldet! 🎉 Check deine E-Mails.');
         setEmail('');
       } else {
         setStatus('error');
