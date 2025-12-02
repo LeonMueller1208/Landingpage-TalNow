@@ -10,24 +10,24 @@ export default function Datenschutz() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       {/* Header */}
-      <header className="px-6 lg:px-12 py-6 border-b border-gray-100">
+      <header className="px-4 sm:px-6 lg:px-12 py-4 sm:py-6 border-b border-gray-100">
         <Link href="/">
           <Logo size="md" variant="gradient" />
         </Link>
       </header>
 
       {/* Content */}
-      <main className="flex-1 px-6 lg:px-12 py-12 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-12 fade-in">
+      <main className="flex-1 px-4 sm:px-6 lg:px-12 py-8 sm:py-12 lg:py-20">
+        <div className="max-w-3xl mx-auto w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-8 sm:mb-12 fade-in">
             Datenschutzerklärung
           </h1>
 
-          <div className="space-y-10 text-gray-700 text-lg leading-relaxed fade-in fade-in-delay-100">
+          <div className="space-y-8 sm:space-y-10 text-gray-700 text-base sm:text-lg leading-relaxed fade-in fade-in-delay-100 break-words overflow-wrap-anywhere">
               
               {/* 1. Verantwortlicher */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Verantwortlicher</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">1. Verantwortlicher</h2>
                 <p className="font-semibold">TalNow GbR <span className="font-normal text-gray-500">(in Gründung)</span></p>
                 <p className="mt-2">Vertreten durch die Gesellschafter:</p>
                 <p>Johan Klee</p>
@@ -48,7 +48,7 @@ export default function Datenschutz() {
 
               {/* 2. Allgemeine Hinweise */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
                 <p>
                   Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung unserer Website, 
                   zur Kommunikation oder zur Nutzung unserer Mailingliste erforderlich ist. Die Verarbeitung 
@@ -58,12 +58,12 @@ export default function Datenschutz() {
 
               {/* 3. Server-Logfiles */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Bereitstellung der Website und Server-Logfiles</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">3. Bereitstellung der Website und Server-Logfiles</h2>
                 <p className="mb-4">
                   Beim Besuch unserer Website werden automatisch Daten erfasst, die Ihr Browser an unseren Server übermittelt. 
                   Dies sind insbesondere:
                 </p>
-                <ul className="list-disc list-inside space-y-1 ml-4 mb-4">
+                <ul className="list-disc list-inside space-y-1 sm:ml-4 mb-4 pl-4 sm:pl-0">
                   <li>IP-Adresse</li>
                   <li>Datum und Uhrzeit des Zugriffs</li>
                   <li>besuchte Seite</li>
@@ -82,7 +82,7 @@ export default function Datenschutz() {
 
               {/* 4. E-Mail Kontakt */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Kontaktaufnahme per E-Mail</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">4. Kontaktaufnahme per E-Mail</h2>
                 <p className="mb-2">
                   Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage.
                 </p>
@@ -95,13 +95,13 @@ export default function Datenschutz() {
 
               {/* 5. Newsletter */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Anmeldung zur Mailingliste / Newsletter</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">5. Anmeldung zur Mailingliste / Newsletter</h2>
                 <p className="mb-4">
                   Sie können sich auf unserer Website in unsere Mailingliste eintragen, um Updates und Informationen 
                   zu TalNow zu erhalten.
                 </p>
                 <p className="mb-2 font-semibold">Hierfür verarbeiten wir:</p>
-                <ul className="list-disc list-inside space-y-1 ml-4 mb-4">
+                <ul className="list-disc list-inside space-y-1 sm:ml-4 mb-4 pl-4 sm:pl-0">
                   <li>E-Mail-Adresse</li>
                   <li>Zeitpunkt der Anmeldung</li>
                   <li>ggf. IP-Adresse (zur rechtlichen Dokumentation)</li>
@@ -120,8 +120,8 @@ export default function Datenschutz() {
                   </a>.
                 </p>
 
-                <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200 mt-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Hinweis zum eingesetzten Dienstleister (Newsletter-Tool)</h3>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-2xl border border-gray-200 mt-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">Hinweis zum eingesetzten Dienstleister (Newsletter-Tool)</h3>
                   <p className="mb-2">
                     Zur Verwaltung der Mailingliste nutzen wir einen externen Dienstleister (Resend).
                   </p>
@@ -137,7 +137,7 @@ export default function Datenschutz() {
 
               {/* 6. Cookies & Tracking */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Cookies & Tracking</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">6. Cookies & Tracking</h2>
                 <p className="mb-2">
                   Unsere Website verwendet derzeit keine Tools zur Reichweitenmessung, keine Analyse-Cookies 
                   und keine personalisierten Trackingdienste.
@@ -150,7 +150,7 @@ export default function Datenschutz() {
 
               {/* 7. Blog */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Kommentare, Blog und redaktionelle Inhalte</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">7. Kommentare, Blog und redaktionelle Inhalte</h2>
                 <p className="mb-2">
                   Sobald Blog- oder SEO-Artikel veröffentlicht werden, verarbeiten wir keine zusätzlichen 
                   personenbezogenen Daten, solange es keine Kommentar- oder Uploadfunktion gibt.
@@ -162,7 +162,7 @@ export default function Datenschutz() {
 
               {/* 8. Speicherung */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Speicherung und Löschung von Daten</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">8. Speicherung und Löschung von Daten</h2>
                 <p>
                   Personenbezogene Daten werden gelöscht, sobald der Zweck der Speicherung entfällt oder Sie 
                   Ihre Einwilligung widerrufen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
@@ -171,9 +171,9 @@ export default function Datenschutz() {
 
               {/* 9. Ihre Rechte */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Ihre Rechte nach DSGVO</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">9. Ihre Rechte nach DSGVO</h2>
                 <p className="mb-4">Sie haben folgende Rechte:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
+                <ul className="list-disc list-inside space-y-2 sm:ml-4 mb-4 pl-4 sm:pl-0">
                   <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
                   <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
                   <li>Recht auf Löschung (Art. 17 DSGVO)</li>
@@ -192,7 +192,7 @@ export default function Datenschutz() {
 
               {/* 10. Beschwerderecht */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Beschwerderecht</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">10. Beschwerderecht</h2>
                 <p className="mb-2">
                   Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, insbesondere 
                   in dem Bundesland, in dem Sie wohnen oder in dem das Unternehmen seinen Sitz hat.
@@ -204,7 +204,7 @@ export default function Datenschutz() {
 
               {/* 11. Datensicherheit */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Datensicherheit</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">11. Datensicherheit</h2>
                 <p>
                   Wir verwenden technische und organisatorische Maßnahmen, um Ihre Daten gegen Verlust, 
                   Missbrauch oder unbefugten Zugriff zu schützen. Die Website wird über eine SSL-Verschlüsselung betrieben.
@@ -213,7 +213,7 @@ export default function Datenschutz() {
 
               {/* 12. Änderungen */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">12. Änderungen dieser Datenschutzerklärung</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">12. Änderungen dieser Datenschutzerklärung</h2>
                 <p>
                   Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sobald neue Funktionen oder 
                   Dienste auf der Website integriert werden. Die jeweils aktuelle Fassung ist jederzeit auf 
@@ -223,12 +223,12 @@ export default function Datenschutz() {
 
             </div>
 
-          <div className="mt-12 pt-8 border-t border-gray-200 fade-in fade-in-delay-200">
+          <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200 fade-in fade-in-delay-200">
             <Link 
               href="/"
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 transition-colors font-medium"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Zurück zur Startseite
@@ -238,7 +238,7 @@ export default function Datenschutz() {
       </main>
 
       {/* Simple Footer */}
-      <footer className="px-6 lg:px-12 py-6 border-t border-gray-100 text-center text-gray-500 text-sm">
+      <footer className="px-4 sm:px-6 lg:px-12 py-4 sm:py-6 border-t border-gray-100 text-center text-gray-500 text-xs sm:text-sm">
         © {new Date().getFullYear()} TalNow. Alle Rechte vorbehalten.
       </footer>
     </div>
