@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const { email, source = 'landing' } = await request.json();
 
     if (!email || !email.includes('@')) {
       return NextResponse.json(
@@ -15,10 +15,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // E-Mail in Supabase speichern
+    // E-Mail in Supabase speichern mit Source
     const { data, error } = await supabase
       .from('newsletter_subscribers')
-      .insert({ email })
+      .insert({ email, source })
       .select();
 
     if (error) {
