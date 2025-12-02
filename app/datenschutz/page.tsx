@@ -3,7 +3,7 @@ import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata = {
-  title: 'Datenschutz | TalNow',
+  title: 'Datenschutzerklärung | TalNow',
   description: 'Datenschutzerklärung der TalNow GbR',
 };
 
@@ -27,12 +27,204 @@ export default function Datenschutz() {
           </AnimatedSection>
 
           <AnimatedSection delay={100}>
-            <div className="space-y-8 text-gray-700 text-lg leading-relaxed">
-              <section className="bg-blue-50 p-6 rounded-2xl border border-blue-200">
-                <p className="text-blue-800">
-                  Die vollständige Datenschutzerklärung wird in Kürze hier veröffentlicht.
+            <div className="space-y-10 text-gray-700 text-lg leading-relaxed">
+              
+              {/* 1. Verantwortlicher */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Verantwortlicher</h2>
+                <p className="font-semibold">TalNow GbR <span className="font-normal text-gray-500">(in Gründung)</span></p>
+                <p className="mt-2">Vertreten durch die Gesellschafter:</p>
+                <p>Johan Klee</p>
+                <p>Leon Müller</p>
+                <div className="mt-4">
+                  <p className="font-semibold">Anschrift:</p>
+                  <p>Sommerweg 13</p>
+                  <p>34266 Niestetal</p>
+                  <p>Deutschland</p>
+                </div>
+                <p className="mt-4">
+                  <span className="font-semibold">E-Mail:</span>{' '}
+                  <a href="mailto:info@talnow.net" className="text-blue-500 hover:text-blue-600 transition-colors">
+                    info@talnow.net
+                  </a>
                 </p>
               </section>
+
+              {/* 2. Allgemeine Hinweise */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+                <p>
+                  Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung unserer Website, 
+                  zur Kommunikation oder zur Nutzung unserer Mailingliste erforderlich ist. Die Verarbeitung 
+                  erfolgt gemäß Art. 6 DSGVO.
+                </p>
+              </section>
+
+              {/* 3. Server-Logfiles */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Bereitstellung der Website und Server-Logfiles</h2>
+                <p className="mb-4">
+                  Beim Besuch unserer Website werden automatisch Daten erfasst, die Ihr Browser an unseren Server übermittelt. 
+                  Dies sind insbesondere:
+                </p>
+                <ul className="list-disc list-inside space-y-1 ml-4 mb-4">
+                  <li>IP-Adresse</li>
+                  <li>Datum und Uhrzeit des Zugriffs</li>
+                  <li>besuchte Seite</li>
+                  <li>Referrer-URL</li>
+                  <li>Browsertyp und Browserversion</li>
+                  <li>Betriebssystem</li>
+                </ul>
+                <p className="mb-2">
+                  Diese Daten werden benötigt, um die Website technisch bereitzustellen und die Systemsicherheit zu gewährleisten.
+                </p>
+                <p className="mb-2">
+                  <span className="font-semibold">Rechtsgrundlage:</span> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer stabilen, sicheren Website).
+                </p>
+                <p>Logfiles werden nach spätestens 7 Tagen automatisch gelöscht.</p>
+              </section>
+
+              {/* 4. E-Mail Kontakt */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Kontaktaufnahme per E-Mail</h2>
+                <p className="mb-2">
+                  Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage.
+                </p>
+                <p className="mb-2">
+                  <span className="font-semibold">Rechtsgrundlage:</span> Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) 
+                  oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Kommunikation).
+                </p>
+                <p>Die Daten werden gelöscht, sobald der Zweck der Speicherung entfällt.</p>
+              </section>
+
+              {/* 5. Newsletter */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Anmeldung zur Mailingliste / Newsletter</h2>
+                <p className="mb-4">
+                  Sie können sich auf unserer Website in unsere Mailingliste eintragen, um Updates und Informationen 
+                  zu TalNow zu erhalten.
+                </p>
+                <p className="mb-2 font-semibold">Hierfür verarbeiten wir:</p>
+                <ul className="list-disc list-inside space-y-1 ml-4 mb-4">
+                  <li>E-Mail-Adresse</li>
+                  <li>Zeitpunkt der Anmeldung</li>
+                  <li>ggf. IP-Adresse (zur rechtlichen Dokumentation)</li>
+                </ul>
+                <p className="mb-4">
+                  Wir verwenden das Double-Opt-In-Verfahren, bei dem Sie Ihre Anmeldung bestätigen müssen.
+                </p>
+                <p className="mb-4">
+                  <span className="font-semibold">Rechtsgrundlage:</span> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+                </p>
+                <p className="mb-4">
+                  Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, z. B. über den 
+                  Abmeldelink in jeder E-Mail oder per Nachricht an{' '}
+                  <a href="mailto:info@talnow.net" className="text-blue-500 hover:text-blue-600 transition-colors">
+                    info@talnow.net
+                  </a>.
+                </p>
+
+                <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200 mt-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Hinweis zum eingesetzten Dienstleister (Newsletter-Tool)</h3>
+                  <p className="mb-2">
+                    Zur Verwaltung der Mailingliste nutzen wir einen externen Dienstleister (Resend).
+                  </p>
+                  <p className="mb-2">
+                    Die Verarbeitung erfolgt auf Grundlage eines Auftragsverarbeitungsvertrags gemäß Art. 28 DSGVO.
+                  </p>
+                  <p>
+                    Je nach Anbieter kann eine Datenübermittlung in die USA erfolgen. In diesem Fall stützt sich 
+                    die Übermittlung auf Art. 46 DSGVO (Standardvertragsklauseln).
+                  </p>
+                </div>
+              </section>
+
+              {/* 6. Cookies & Tracking */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Cookies & Tracking</h2>
+                <p className="mb-2">
+                  Unsere Website verwendet derzeit keine Tools zur Reichweitenmessung, keine Analyse-Cookies 
+                  und keine personalisierten Trackingdienste.
+                </p>
+                <p>
+                  Sollte zukünftig SEO-Analytik (z. B. Google Analytics, Plausible, Matomo) eingesetzt werden, 
+                  wird diese Erklärung entsprechend ergänzt.
+                </p>
+              </section>
+
+              {/* 7. Blog */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Kommentare, Blog und redaktionelle Inhalte</h2>
+                <p className="mb-2">
+                  Sobald Blog- oder SEO-Artikel veröffentlicht werden, verarbeiten wir keine zusätzlichen 
+                  personenbezogenen Daten, solange es keine Kommentar- oder Uploadfunktion gibt.
+                </p>
+                <p>
+                  Damit bleibt dieser Abschnitt informatorisch; Anpassungen folgen, falls Funktionen erweitert werden.
+                </p>
+              </section>
+
+              {/* 8. Speicherung */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Speicherung und Löschung von Daten</h2>
+                <p>
+                  Personenbezogene Daten werden gelöscht, sobald der Zweck der Speicherung entfällt oder Sie 
+                  Ihre Einwilligung widerrufen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+                </p>
+              </section>
+
+              {/* 9. Ihre Rechte */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Ihre Rechte nach DSGVO</h2>
+                <p className="mb-4">Sie haben folgende Rechte:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
+                  <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+                  <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+                  <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+                  <li>Recht auf Einschränkung (Art. 18 DSGVO)</li>
+                  <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+                  <li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
+                  <li>Recht auf Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+                </ul>
+                <p>
+                  Zur Ausübung der Rechte genügt eine formlose Mitteilung an:{' '}
+                  <a href="mailto:info@talnow.net" className="text-blue-500 hover:text-blue-600 transition-colors">
+                    info@talnow.net
+                  </a>
+                </p>
+              </section>
+
+              {/* 10. Beschwerderecht */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Beschwerderecht</h2>
+                <p className="mb-2">
+                  Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, insbesondere 
+                  in dem Bundesland, in dem Sie wohnen oder in dem das Unternehmen seinen Sitz hat.
+                </p>
+                <p>
+                  Zuständig ist der Hessische Beauftragte für Datenschutz und Informationsfreiheit.
+                </p>
+              </section>
+
+              {/* 11. Datensicherheit */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Datensicherheit</h2>
+                <p>
+                  Wir verwenden technische und organisatorische Maßnahmen, um Ihre Daten gegen Verlust, 
+                  Missbrauch oder unbefugten Zugriff zu schützen. Die Website wird über eine SSL-Verschlüsselung betrieben.
+                </p>
+              </section>
+
+              {/* 12. Änderungen */}
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">12. Änderungen dieser Datenschutzerklärung</h2>
+                <p>
+                  Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sobald neue Funktionen oder 
+                  Dienste auf der Website integriert werden. Die jeweils aktuelle Fassung ist jederzeit auf 
+                  dieser Seite einsehbar.
+                </p>
+              </section>
+
             </div>
           </AnimatedSection>
 
@@ -59,4 +251,3 @@ export default function Datenschutz() {
     </div>
   );
 }
-
