@@ -65,18 +65,18 @@ export default function Unternehmen() {
             <span className="text-sm font-semibold text-blue-700">Für Unternehmen</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight text-gray-900 fade-in fade-in-delay-100">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight text-gray-900 fade-in fade-in-delay-100">
             Finde Talente, die{' '}
             <span className="text-blue-500">wirklich passen</span>
           </h1>
 
-          <p className="text-2xl md:text-3xl text-gray-600 mb-12 font-medium fade-in fade-in-delay-200">
+          <p className="text-lg md:text-xl text-gray-600 mb-10 font-medium fade-in fade-in-delay-200">
             Schluss mit Bewerbungsstapeln und Fehlbesetzungen.
           </p>
 
           <a
             href="#newsletter"
-            className="inline-block px-10 py-5 bg-blue-500 text-white rounded-full text-xl font-bold hover:bg-blue-600 hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105 fade-in fade-in-delay-300"
+            className="inline-block px-8 py-4 bg-blue-500 text-white rounded-full text-lg font-bold hover:bg-blue-600 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105 fade-in fade-in-delay-300"
           >
             Beta-Zugang sichern →
           </a>
@@ -120,11 +120,11 @@ export default function Unternehmen() {
       <section className="py-16 lg:py-24 px-6 lg:px-12 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <AnimatedSection>
-            <div className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 leading-tight">
+            <div className="mb-10">
+              <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3 leading-tight">
                 Die 3 teuersten Recruiting-Fehler
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-lg text-gray-600">
                 Was Unternehmen jedes Jahr Millionen kostet.
               </p>
             </div>

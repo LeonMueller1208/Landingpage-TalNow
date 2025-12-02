@@ -37,10 +37,10 @@ export default function NewsletterTalente() {
   return (
     <section id="newsletter" className="relative py-16 lg:py-24 px-6 lg:px-12 bg-white overflow-hidden">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 fade-in">
+        <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4 fade-in">
           Beta-Zugang sichern
         </h2>
-        <p className="text-xl text-gray-600 mb-10 fade-in fade-in-delay-100">
+        <p className="text-lg text-gray-600 mb-8 fade-in fade-in-delay-100">
           Sei einer der Ersten und finde Jobs, die wirklich zu dir passen.
         </p>
 
