@@ -2,6 +2,8 @@ import Logo from '@/components/Logo';
 import Link from 'next/link';
 import NewsletterUnternehmen from '@/components/NewsletterUnternehmen';
 import AnimatedSection from '@/components/AnimatedSection';
+import ArticleTeaser from '@/components/ArticleTeaser';
+import { getArticlesByCategory } from '@/data/articles';
 
 export const metadata = {
   title: 'Für Unternehmen | TalNow',
@@ -24,23 +26,7 @@ export default function Unternehmen() {
     },
   ];
 
-  const articles = [
-    {
-      number: '01',
-      title: 'Der teure Fehlgriff',
-      description: 'Eine Fehlbesetzung kostet im Schnitt 30% des Jahresgehalts. Mit echtem Matching vermeidbar.',
-    },
-    {
-      number: '02',
-      title: 'Ghosting durch Kandidaten',
-      description: 'Top-Talente springen ab, weil der Prozess zu lange dauert. Schnelligkeit gewinnt.',
-    },
-    {
-      number: '03',
-      title: 'Culture Fit ignoriert',
-      description: 'Fachlich top, menschlich Flop. 89% der Fehlbesetzungen scheitern an der Kultur.',
-    },
-  ];
+  const articles = getArticlesByCategory('unternehmen');
 
   return (
     <main className="min-h-screen bg-white">
@@ -116,66 +102,40 @@ export default function Unternehmen() {
       {/* Newsletter */}
       <NewsletterUnternehmen />
 
-      {/* Article */}
-      <section className="py-16 lg:py-24 px-6 lg:px-12 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
+      {/* Articles */}
+      <section className="py-16 lg:py-24 px-6 lg:px-12 bg-white">
+        <div className="max-w-6xl mx-auto">
           <AnimatedSection>
-            <div className="mb-10">
+            <div className="mb-12 text-center">
               <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3 leading-tight">
-                Die 3 teuersten Recruiting-Fehler
+                Insights für erfolgreiches Recruiting
               </h2>
               <p className="text-lg text-gray-600">
-                Was Unternehmen jedes Jahr Millionen kostet.
+                Expertenwissen zu modernem Talent Acquisition.
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg">
-            <div className="space-y-6">
-              {articles.map((item, index) => (
-                <AnimatedSection key={index} delay={index * 100}>
-                  <div className="flex gap-4 group hover:translate-x-2 transition-all duration-300">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center text-white font-bold group-hover:scale-110 transition-transform">
-                        {item.number}
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
-
-            <AnimatedSection delay={400}>
-              <div className="mt-10 p-6 bg-blue-50 rounded-2xl border-l-4 border-blue-500">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Die Lösung?</h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Ein System, das Kandidaten nach echtem Fit filtert – nicht nur nach Keywords im Lebenslauf.
-                </p>
-                <p className="text-lg font-bold text-gray-900 mt-3">
-                  Das ist TalNow.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={500}>
-              <div className="mt-10 text-center">
-                <a
-                  href="#newsletter"
-                  className="inline-block bg-blue-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-600 hover:shadow-xl transition-all duration-300 hover:scale-105"
-                >
-                  Beta-Zugang sichern →
-                </a>
-              </div>
-            </AnimatedSection>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {articles.map((article, index) => (
+              <AnimatedSection key={article.id} delay={index * 100}>
+                <ArticleTeaser article={article} />
+              </AnimatedSection>
+            ))}
           </div>
+
+          {/* View All Link */}
+          <AnimatedSection delay={400}>
+            <div className="mt-12 text-center">
+              <Link
+                href="/artikel"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold group"
+              >
+                Alle Artikel ansehen
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

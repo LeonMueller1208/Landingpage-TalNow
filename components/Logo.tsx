@@ -30,3 +30,4 @@ export default function Logo({ size = 'md', variant = 'gradient' }: LogoProps) {
   );
 }
 
+
