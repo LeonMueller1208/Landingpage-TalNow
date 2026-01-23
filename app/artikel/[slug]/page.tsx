@@ -48,23 +48,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50 overflow-x-hidden">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 px-6 lg:px-12 py-6 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <Link href="/">
+      <header className="bg-white border-b border-gray-200 px-4 sm:px-6 lg:px-12 py-4 sm:py-6 sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto flex justify-between items-center gap-4">
+          <Link href="/" className="flex-shrink-0">
             <Logo size="md" variant="gradient" />
           </Link>
-          <div className="flex gap-6">
+          <div className="flex gap-3 sm:gap-6 flex-shrink-0">
             <Link 
               href="/talente"
-              className="text-sm text-gray-500 hover:text-emerald-600 transition-colors"
+              className="text-xs sm:text-sm text-gray-500 hover:text-emerald-600 transition-colors whitespace-nowrap"
             >
               Für Talente
             </Link>
             <Link 
               href="/unternehmen"
-              className="text-sm text-gray-500 hover:text-blue-600 transition-colors"
+              className="text-xs sm:text-sm text-gray-500 hover:text-blue-600 transition-colors whitespace-nowrap"
             >
               Für Unternehmen
             </Link>

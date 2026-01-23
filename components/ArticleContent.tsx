@@ -19,7 +19,7 @@ export default function ArticleContent({ article }: ArticleContentProps) {
       
       case 'paragraph':
         return (
-          <p key={index} className="text-lg text-gray-700 leading-relaxed mb-6">
+          <p key={index} className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 break-words">
             {section.content}
           </p>
         );
@@ -46,19 +46,19 @@ export default function ArticleContent({ article }: ArticleContentProps) {
         return (
           <blockquote key={index} className={`border-l-4 ${
             article.category === 'talente' ? 'border-emerald-500' : 'border-blue-500'
-          } pl-6 py-4 my-8 italic text-xl text-gray-800`}>
+          } pl-4 sm:pl-6 py-4 my-8 italic text-lg sm:text-xl text-gray-800 break-words`}>
             "{section.content}"
           </blockquote>
         );
       
       case 'callout':
         return (
-          <div key={index} className={`p-6 rounded-2xl ${
+          <div key={index} className={`p-4 sm:p-6 rounded-2xl ${
             article.category === 'talente' 
               ? 'bg-gradient-to-r from-emerald-50 to-emerald-100 border-l-4 border-emerald-500' 
               : 'bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500'
-          } my-8`}>
-            <p className="text-lg font-medium text-gray-900 leading-relaxed">
+          } my-8 overflow-x-hidden`}>
+            <p className="text-base sm:text-lg font-medium text-gray-900 leading-relaxed break-words">
               {section.content}
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function ArticleContent({ article }: ArticleContentProps) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 lg:py-24 w-full overflow-x-hidden">
       <AnimatedSection>
         <a 
           href={`/${article.category}`}
@@ -83,17 +83,17 @@ export default function ArticleContent({ article }: ArticleContentProps) {
 
       <AnimatedSection delay={100}>
         <div className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <span className={`px-4 py-2 rounded-full text-sm font-semibold ${
+          <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-6">
+            <span className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold ${
               article.category === 'talente' 
                 ? 'bg-emerald-100 text-emerald-700' 
                 : 'bg-blue-100 text-blue-700'
             }`}>
               {article.category === 'talente' ? 'Für Talente' : 'Für Unternehmen'}
             </span>
-            <span className="text-gray-500">{article.readTime}</span>
-            <span className="text-gray-400">•</span>
-            <span className="text-gray-500">
+            <span className="text-xs sm:text-sm text-gray-500">{article.readTime}</span>
+            <span className="text-gray-400 hidden sm:inline">•</span>
+            <span className="text-xs sm:text-sm text-gray-500">
               {new Date(article.date).toLocaleDateString('de-DE', { 
                 year: 'numeric', 
                 month: 'long', 
@@ -102,17 +102,17 @@ export default function ArticleContent({ article }: ArticleContentProps) {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 leading-tight">
             {article.title}
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed">
             {article.subtitle}
           </p>
         </div>
       </AnimatedSection>
 
-      <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
-        <div className="prose prose-lg max-w-none">
+      <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg w-full overflow-x-hidden">
+        <div className="prose prose-lg max-w-none overflow-x-hidden">
           {article.content.map((section, index) => renderSection(section, index))}
         </div>
 
