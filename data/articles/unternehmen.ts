@@ -925,5 +925,228 @@ export const unternehmenArticles: Article[] = [
         content: "Ng, T. W. H., & Gossett, C. W. (2013).Career choice in Canadian public service: An exploration of fit with the millennial generation. Public Personnel Management, 42(3), 337–358.https://doi.org/10.1177/0091026013495767"
       }
     ]
+  },
+  {
+    id: 'u05',
+    slug: 'jobtitel-irrsinn',
+    title: "Warum Jobtitel im Recruiting immer weniger aussagen – und kompetenzbasierte Beschreibungen überlegen sind",
+    subtitle: "Gleiche Stelle, anderer Titel, andere Bewerber",
+    category: 'unternehmen',
+    date: '2026-01-20',
+    readTime: '5 Min. Lesezeit',
+    metaDescription: "In einer aktuell laufenden qualitativen Studie berichten HR-Verantwortliche aus unterschiedlichen Unternehmen von einem auffälligen Muster. Die Beobachtung...",
+    content: [
+      {
+        type: 'paragraph',
+        content: "In einer aktuell laufenden qualitativen Studie berichten HR-Verantwortliche aus unterschiedlichen Unternehmen von einem auffälligen Muster. Die Beobachtung ist konsistent, unabhängig von Branche oder Organisationsgröße."
+      },
+      {
+        type: 'paragraph',
+        content: "Eine Interviewpartnerin, Leiterin HR eines deutschen Mittelständlers, beschreibt die Situation so: Für eine vakante Position existieren intern mehrere mögliche Jobtitel. Aufgaben, Verantwortlichkeiten und Anforderungen sind identisch. Dennoch unterscheiden sich Bewerberzahl, Bewerberstruktur und wahrgenommene Qualität erheblich – allein durch die Bezeichnung."
+      },
+      {
+        type: 'paragraph',
+        content: "Konkret schildert sie folgendes Beispiel: Wird die Stelle als „Referent Personal“ ausgeschrieben, gehen viele Bewerbungen ein. Die Streuung ist hoch, der Anteil an Quereinsteigern ebenfalls.Wird dieselbe Rolle als „HR Business Partner“ bezeichnet, sinkt die Zahl der Bewerbungen deutlich. Gleichzeitig wird das Bewerberniveau subjektiv als höher eingeschätzt, die Profile wirken homogener und stärker einschlägig."
+      },
+      {
+        type: 'paragraph',
+        content: "Die Tätigkeit bleibt gleich. Der Titel verändert sich. Die Passung ebenfalls."
+      },
+      {
+        type: 'paragraph',
+        content: "Diese Beobachtung ist kein Einzelfall. Sie verweist auf ein strukturelles Problem moderner Recruiting-Logiken, das sich auch in der Forschung klar nachzeichnen lässt."
+      },
+      {
+        type: 'heading',
+        content: "Jobtitel sind Signale, keine Informationen"
+      },
+      {
+        type: 'paragraph',
+        content: "Aus Sicht der Arbeitsmarktökonomie und der Organisationspsychologie erfüllen Jobtitel primär eine Signalfunktion. Sie sollen Komplexität reduzieren und Erwartungen steuern."
+      },
+      {
+        type: 'paragraph',
+        content: "Bewerber nutzen Titel als mentale Abkürzung. Sie schließen vom Begriff auf Anforderungen, Status, Professionalität und ihre eigenen Erfolgschancen. Genau hier liegt das Problem."
+      },
+      {
+        type: 'paragraph',
+        content: "Jobtitel sind weder standardisiert noch eindeutig definiert. Derselbe Titel kann in unterschiedlichen Unternehmen völlig verschiedene Aufgaben beschreiben. Umgekehrt können identische Tätigkeiten unter unterschiedlichen Bezeichnungen laufen."
+      },
+      {
+        type: 'paragraph',
+        content: "Je unschärfer der Titel, desto stärker greifen subjektive Annahmen, soziale Codes und implizite Statusbewertungen. Titel ersetzen Information durch Interpretation."
+      },
+      {
+        type: 'heading',
+        content: "Selbstselektion statt tatsächlicher Passung"
+      },
+      {
+        type: 'paragraph',
+        content: "Ein zentraler Effekt jobtitelbasierter Ausschreibungen ist Selbstselektion."
+      },
+      {
+        type: 'paragraph',
+        content: "Titel mit niedrigschwelliger oder generalistischer Konnotation ziehen viele Bewerber an, auch solche mit geringer fachlicher Passung. Titel mit höherem Statussignal wirken abschreckend auf einen Teil potenziell geeigneter Kandidaten und ziehen eine kleinere, homogener wirkende Gruppe an."
+      },
+      {
+        type: 'paragraph',
+        content: "Aus Unternehmenssicht entsteht dadurch häufig der Eindruck höherer Qualität. Empirisch betrachtet wird jedoch vor allem Varianz reduziert, nicht zwangsläufig Prognosequalität erhöht."
+      },
+      {
+        type: 'paragraph',
+        content: "Forschung zur Personalauswahl zeigt seit Jahren: Selbstselektion verändert den Bewerberpool, verbessert aber nicht automatisch die Vorhersage späterer Leistung oder Verbleibsdauer."
+      },
+      {
+        type: 'paragraph',
+        content: "Die Interviews aus der aktuellen Studie deuten darauf hin, dass viele Unternehmen diese Effekte zwar wahrnehmen, sie jedoch als gegeben hinnehmen, statt die zugrunde liegende Logik zu hinterfragen."
+      },
+      {
+        type: 'heading',
+        content: "Warum A/B-Tests das Problem sichtbar machen, aber nicht lösen"
+      },
+      {
+        type: 'paragraph',
+        content: "Viele Organisationen testen Jobtitel systematisch. Kleine sprachliche Änderungen führen zu deutlichen Unterschieden bei Klick- und Bewerbungsraten. Diese Effekte sind gut dokumentiert."
+      },
+      {
+        type: 'paragraph',
+        content: "Was solche Tests jedoch zeigen, ist nicht, dass Titel gute Informationen liefern, sondern dass sie starke Reize setzen. Bewerber reagieren auf Labels, nicht auf Inhalte."
+      },
+      {
+        type: 'paragraph',
+        content: "A/B-Testing optimiert die Wirkung eines Signals. Es behebt nicht das zugrunde liegende Informationsdefizit. Im Gegenteil: Recruiting wird weiter in Richtung Marketing verschoben, während die zentrale Frage unbeantwortet bleibt: Passt diese Person zu dieser Tätigkeit in diesem Kontext?"
+      },
+      {
+        type: 'heading',
+        content: "Die Perspektive der Bewerber: Orientierungslosigkeit statt Wahlfreiheit"
+      },
+      {
+        type: 'paragraph',
+        content: "Besonders deutlich wird das Problem bei Berufseinsteigern."
+      },
+      {
+        type: 'paragraph',
+        content: "Studien zur beruflichen Orientierung zeigen, dass Absolventen Aufgabenprofile durchaus verstehen, mit Jobtiteln jedoch wenig anfangen können. Gleiche Tätigkeiten werden branchen- und unternehmensabhängig unterschiedlich benannt. Titel sagen kaum etwas über tatsächliche Lernkurven, Verantwortung oder Entwicklungsperspektiven aus."
+      },
+      {
+        type: 'paragraph',
+        content: "Die Folge ist kein rationaler Auswahlprozess, sondern Suchverhalten entlang vertrauter oder vermeintlich sicherer Begriffe. Wer diese Begriffe nicht kennt, bleibt unsichtbar. Wer sie falsch interpretiert, bewirbt sich fehlgeleitet."
+      },
+      {
+        type: 'paragraph',
+        content: "Jobtitel suggerieren Orientierung, ohne sie zu leisten."
+      },
+      {
+        type: 'heading',
+        content: "Warum Jobtitel strukturell ungeeignet für gutes Matching sind"
+      },
+      {
+        type: 'heading',
+        content: "Aus evidenzbasierter Perspektive sind Jobtitel problematisch, weil sie"
+      },
+      {
+        type: 'list',
+        content: "",
+        items: [
+          "keine valide Information über erfolgskritische Anforderungen liefern",
+          "Selbstselektion verzerren",
+          "soziale und kulturelle Bias verstärken",
+          "keine verlässliche Prognose über Leistung oder Verbleib ermöglichen"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Meta-Analysen zur Personalauswahl zeigen konsistent, dass formale Kategorien wie Titel oder Berufsnamen deutlich schlechtere Prädiktoren für spätere Arbeitsleistung sind als konkrete Fähigkeiten, Motivation und Kontextpassung."
+      },
+      {
+        type: 'paragraph',
+        content: "Titel vereinfachen dort, wo Differenzierung notwendig wäre."
+      },
+      {
+        type: 'heading',
+        content: "Die Alternative: kompetenzbasierte Beschreibungen statt Titel-Fixierung"
+      },
+      {
+        type: 'paragraph',
+        content: "Moderne Recruiting-Ansätze verschieben den Fokus schrittweise: weg von statischen Bezeichnungen, hin zu klar beschriebenen Aufgabenclustern, weg von Statussignalen, hin zu beobachtbaren Kompetenzen und realen Arbeitskontexten."
+      },
+      {
+        type: 'heading',
+        content: "Titel können dabei weiterhin als grobe Orientierung dienen. Entscheidend sind jedoch andere Informationen"
+      },
+      {
+        type: 'list',
+        content: "",
+        items: [
+          "Welche Aufgaben prägen den Arbeitsalltag tatsächlich?",
+          "Welche Fähigkeiten sind kurzfristig erforderlich, welche entwickelbar?",
+          "In welchem Kontext wird gearbeitet, mit welchen Erwartungen an Zusammenarbeit, Tempo und Verantwortung?"
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: "Matching wird so probabilistisch statt symbolisch. Es geht nicht um perfekte Vorhersage, sondern um bessere durchschnittliche Passung."
+      },
+      {
+        type: 'heading',
+        content: "Warum Jobtitel 2026 weiter an Bedeutung verlieren werden"
+      },
+      {
+        type: 'paragraph',
+        content: "Je dynamischer Arbeitsmärkte werden, desto weniger tragen statische Begriffe. Rollen verändern sich schneller als ihre Bezeichnungen. Titel erzeugen Erwartungen, die sie nicht einlösen können."
+      },
+      {
+        type: 'paragraph',
+        content: "Das zentrale Problem ist nicht falsche Benennung, sondern eine überholte Logik."
+      },
+      {
+        type: 'paragraph',
+        content: "Recruiting braucht keine besseren Titel. Es braucht bessere Informationen über Passung."
+      },
+      {
+        type: 'paragraph',
+        content: "Jobtitel sind ein Relikt einer stabilen Arbeitswelt. In einer kompetenzbasierten, dynamischen Ökonomie wirken sie zunehmend irreführend."
+      },
+      {
+        type: 'paragraph',
+        content: "Unternehmen, die weiter auf Titel optimieren, verbessern Sichtbarkeit, nicht Qualität.Unternehmen, die Passung ernst nehmen, relativieren ihre Bedeutung und investieren in bessere Beschreibungen, bessere Signale und bessere Matching-Logiken."
+      },
+      {
+        type: 'paragraph',
+        content: "Der entscheidende Schritt ist nicht sprachlich, sondern konzeptionell."
+      },
+      {
+        type: 'heading',
+        content: "Weiterführende Quellen"
+      },
+      {
+        type: 'paragraph',
+        content: "Autor, D. H. (2015). Why are there still so many jobs? The history and future of workplace automation. Journal of Economic Perspectives, 29(3), 3–30. https://doi.org/10.1257/jep.29.3.3"
+      },
+      {
+        type: 'paragraph',
+        content: "Cappelli, P. (2019). Your approach to hiring is all wrong. Harvard Business Review."
+      },
+      {
+        type: 'paragraph',
+        content: "Highhouse, S., Zickar, M. J., Thorsteinson, T. J., Stierwalt, S. L., & Slaughter, J. E. (1999).Assessing company employment image. Journal of Applied Psychology, 84(5), 781–793. https://doi.org/10.1037/0021-9010.84.5.781"
+      },
+      {
+        type: 'paragraph',
+        content: "Ployhart, R. E., & Schneider, B. (2012). The social and organizational context of personnel selection. Industrial and Organizational Psychology, 5(1), 1–24. https://doi.org/10.1111/j.1754-9434.2011.01399.x"
+      },
+      {
+        type: 'paragraph',
+        content: "Schmidt, F. L., & Hunter, J. E. (1998). The validity and utility of selection methods in personnel psychology. Psychological Bulletin, 124(2), 262–274. https://doi.org/10.1037/0033-2909.124.2.262"
+      },
+      {
+        type: 'paragraph',
+        content: "Spence, M. (1973). Job market signaling. Quarterly Journal of Economics, 87(3), 355–374. https://doi.org/10.2307/1882010"
+      },
+      {
+        type: 'paragraph',
+        content: "Wilkins, K. G., & Keating, D. M. (2011). Work roles, identity and adaptability. Journal of Vocational Behavior, 79(2), 335–346. https://doi.org/10.1016/j.jvb.2011.03.003"
+      }
+    ]
   }
 ];

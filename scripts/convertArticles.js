@@ -52,6 +52,13 @@ const articleFiles = [
     category: 'unternehmen',
     date: '2026-01-20',
   },
+  {
+    path: 'Artikel/Unternehmen/U05 Jobtitel-Irrsinn.docx',
+    id: 'u05',
+    slug: 'jobtitel-irrsinn',
+    category: 'unternehmen',
+    date: '2026-01-20',
+  },
 ];
 
 async function convertWordToArticle(filePath, metadata) {
